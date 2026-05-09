@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Über mich" description="Die Person hinter First Up Productions. Videoproducer mit cinematischem Hintergrund und klarem Fokus auf professionelle Unternehmenskommunikation.">
+
+  <section class="section-padding bg-brand-black pt-32">
+    <div class="container-narrow">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Portrait -->
+        <div class="lg:sticky lg:top-[201px]">
+          <div class="aspect-[4/5] bg-brand-gray max-w-sm overflow-hidden">
+            <img src="/portrait.jpg" alt="Adem Kocyigit, Gründer von First Up Productions, am Set mit Kamera und Gimbal" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div>
+          <h1 class="text-4xl md:text-5xl font-heading mb-8">Die Person hinter First Up Productions.</h1>
+
+          <div class="space-y-6 text-brand-light/70 leading-relaxed">
+            <p>
+              Ich bin der Gründer von First Up Productions und der Mensch, der hinter Konzept, Kamera und Schnitt steht.
+            </p>
+            <p>
+              Mein Weg in die Videoproduktion begann im Film, mit Regie, Storytelling und visueller Erzählung. Dieses Handwerk bildet bis heute die Grundlage meiner Arbeit und gibt jedem Unternehmensprojekt eine stärkere Bildsprache, eine bewusstere Inszenierung und mehr Tiefe. Ich denke in Geschichten und Kommunikationszielen, nicht in Clips.
+            </p>
+            <p>
+              Nach mehreren Jahren Erfahrung in der professionellen Inhouse-Videoproduktion, unter anderem bei einem großen IT-Dienstleister, habe ich First Up Productions gegründet. Der Grund: Ich sah eine Lücke zwischen dem, was Unternehmen visuell kommunizieren, und dem, was tatsächlich möglich wäre. Diese Lücke zu schließen, ist mein Antrieb.
+            </p>
+            <p>
+              Heute arbeite ich mit Unternehmen und Organisationen zusammen, die ihre Kommunikation professionell und sichtbar gestalten wollen, mit Inhalten, die nicht nur gut aussehen, sondern echten geschäftlichen Nutzen schaffen. Cinematisch überzeugen, strategisch funktionieren.
+            </p>
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-sm uppercase tracking-widest text-brand-accent mb-4">Was mich antreibt</h3>
+              <ul class="space-y-2 text-sm text-brand-muted">
+                <li>— Unternehmenskommunikation verdient cinematische Qualität</li>
+                <li>— Professioneller Content muss nicht austauschbar sein</li>
+                <li>— Visuell denken, strategisch handeln</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm uppercase tracking-widest text-brand-accent mb-4">Was Sie erwarten können</h3>
+              <ul class="space-y-2 text-sm text-brand-muted">
+                <li>— Klare Kommunikation, kurze Wege</li>
+                <li>— Verlässliche Umsetzung ohne Überraschungen</li>
+                <li>— Ein Produktionspartner, der strategisch mitdenkt</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-12">
+            <h3 class="text-sm uppercase tracking-widest text-brand-accent mb-4">Kompetenzen</h3>
+            <div class="flex flex-wrap gap-3">
+              {['Konzeption & Storytelling', 'Regie & Bildgestaltung', 'Kamera & Licht', 'Schnitt & Postproduktion', 'Color Grading', 'Sound-Design', 'Fotografie'].map(skill => (
+                <span class="px-4 py-2 text-xs border border-white/10 text-brand-muted">{skill}</span>
+              ))}
+            </div>
+          </div>
+
+          <div class="mt-12">
+            <a href="/kontakt" class="btn-primary">Lassen Sie uns über Ihr Projekt sprechen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
