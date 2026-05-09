@@ -11,12 +11,12 @@ Step-by-step list of everything that still needs to happen between "code is read
 - [x] Favicon exists (`/favicon.svg`).
 - [x] Contact form rebuilt as Web3Forms-ready with all required fields, honeypot, inline status, privacy note.
 - [x] Git repo initialized with first commit.
-- [ ] **Confirm or correct e-mail address.** Production currently uses `firstaproductions.media@gmail.com` everywhere; previous code used `firstupproductions.media@gmail.com`. If the new spelling is the real address, no action needed. If it was a typo, do a project-wide find-replace.
+- [ ] **Confirm or correct e-mail address.** Production currently uses `firstupproductions.media@gmail.com` everywhere; previous code used `firstupproductions.media@gmail.com`. If the new spelling is the real address, no action needed. If it was a typo, do a project-wide find-replace.
 - [ ] Create a GitHub repo and push (commands below).
 
 ## 2. Web3Forms access key
 
-- [ ] Go to [web3forms.com](https://web3forms.com) and enter `firstaproductions.media@gmail.com` (or whichever final address you confirm).
+- [ ] Go to [web3forms.com](https://web3forms.com) and enter `firstupproductions.media@gmail.com` (or whichever final address you confirm).
 - [ ] Click **Create Access Key**, confirm via the email Web3Forms sends.
 - [ ] Open `src/pages/kontakt.astro` and replace `YOUR_WEB3FORMS_PRODUCTIONS_ACCESS_KEY` with the real key.
 - [ ] Commit & push — Cloudflare rebuilds automatically.
@@ -109,4 +109,4 @@ Once the Cloudflare zone is active:
 - `astro.config.mjs` — added `site: 'https://firstupproductions.de'`
 - `src/layouts/Layout.astro` — Open Graph + Twitter Card + canonical + favicon fallbacks + ogImage prop
 - `src/pages/kontakt.astro` — `mailto:` form replaced with Web3Forms (placeholder access key, honeypot, inline status, privacy note); new fields: company, project_type select, timeline, budget; required = name, email, message
-- `src/components/Footer.astro` — email switched to `firstaproductions.media@gmail.com`
+- `src/components/Footer.astro` — email switched to `firstupproductions.media@gmail.com`

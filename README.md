@@ -64,7 +64,7 @@ Once the zone is active in Cloudflare:
 ### Step 6 — Verify
 
 - Visit `https://firstupproductions.de` — should serve the live site.
-- Test the contact form on `/kontakt` — submit one message and confirm it arrives at `firstaproductions.media@gmail.com`.
+- Test the contact form on `/kontakt` — submit one message and confirm it arrives at `firstupproductions.media@gmail.com`.
 - Test on a phone (mobile autoplay, layout).
 
 After every push to `main`, Cloudflare auto-rebuilds. Branch pushes get preview deployments at `<branch>.<project>.pages.dev`.
@@ -110,7 +110,7 @@ ffmpeg -ss 1 -i video.mp4 -frames:v 1 -q:v 4 video-poster.jpg
 The form on `/kontakt` uses [Web3Forms](https://web3forms.com) — no backend needed.
 
 **One-time setup:**
-1. Go to [web3forms.com](https://web3forms.com) and enter `firstaproductions.media@gmail.com`.
+1. Go to [web3forms.com](https://web3forms.com) and enter `firstupproductions.media@gmail.com`.
 2. Click **Create Access Key**, confirm via the email Web3Forms sends.
 3. Copy the access key.
 4. Open `src/pages/kontakt.astro` and replace `YOUR_WEB3FORMS_PRODUCTIONS_ACCESS_KEY` with the real key.

@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="space-y-6">
             <div>
               <h3 class="text-xs uppercase tracking-widest text-brand-accent mb-2">E-Mail</h3>
-              <a href="mailto:firstaproductions.media@gmail.com" class="text-brand-light/70 hover:text-brand-accent transition-colors">firstaproductions.media@gmail.com</a>
+              <a href="mailto:firstupproductions.media@gmail.com" class="text-brand-light/70 hover:text-brand-accent transition-colors">firstupproductions.media@gmail.com</a>
             </div>
             <div>
               <h3 class="text-xs uppercase tracking-widest text-brand-accent mb-2">Telefon</h3>
@@ -32,7 +32,7 @@ import Layout from '../layouts/Layout.astro';
               <div class="flex gap-4 text-brand-light/70">
                 <a href="https://www.instagram.com/firstupproductions/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition-colors">Instagram</a>
                 <span>Vimeo</span>
-                <a href="https://www.tiktok.com/@firstupproductions" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition-colors">TikTok</a>
+                <a href="https://www.tiktok.com/@first.up.productions?_r=1&_t=ZG-96EKANmE53Y" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition-colors">TikTok</a>
               </div>
             </div>
           </div>
@@ -43,8 +43,8 @@ import Layout from '../layouts/Layout.astro';
         <!-- Right: Form -->
         <div class="bg-brand-dark p-8 lg:p-10 border border-white/5">
           <form id="contact-form" class="space-y-6" novalidate>
-            <!-- Web3Forms credentials. TODO: replace YOUR_WEB3FORMS_PRODUCTIONS_ACCESS_KEY with the access key from https://web3forms.com after registering with firstaproductions.media@gmail.com. -->
-            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_PRODUCTIONS_ACCESS_KEY" />
+            <!-- Web3Forms access key for firstupproductions.media@gmail.com -->
+            <input type="hidden" name="access_key" value="e16c1d5c-4510-4c74-809c-80b2e06d50c0" />
             <input type="hidden" name="subject" value="Neue Projektanfrage über First Up Productions" />
             <input type="hidden" name="from_name" value="First Up Productions Website" />
             <!-- Honeypot field (visually hidden but reachable to bots) -->
@@ -65,19 +65,6 @@ import Layout from '../layouts/Layout.astro';
             <div>
               <label for="company" class="block text-xs uppercase tracking-widest text-brand-muted mb-2">Unternehmen / Organisation</label>
               <input type="text" id="company" name="company" autocomplete="organization" class="w-full bg-brand-black border border-white/10 px-4 py-3 text-sm text-brand-light placeholder:text-brand-light/20 focus:border-brand-accent focus:outline-none transition-colors" />
-            </div>
-            <div>
-              <label for="project_type" class="block text-xs uppercase tracking-widest text-brand-muted mb-2">Art des Projekts</label>
-              <select id="project_type" name="project_type" class="w-full bg-brand-black border border-white/10 px-4 py-3 text-sm text-brand-light focus:border-brand-accent focus:outline-none transition-colors cursor-pointer">
-                <option value="">Bitte wählen</option>
-                <option value="Imagefilm">Imagefilm</option>
-                <option value="Eventvideo">Eventvideo</option>
-                <option value="Interview">Interview</option>
-                <option value="Social Media Content / Reels">Social Media Content / Reels</option>
-                <option value="Produkt- oder Projektvideo">Produkt- oder Projektvideo</option>
-                <option value="Recruiting-Video">Recruiting-Video</option>
-                <option value="Sonstiges">Sonstiges</option>
-              </select>
             </div>
             <div>
               <label for="timeline" class="block text-xs uppercase tracking-widest text-brand-muted mb-2">Gewünschter Zeitraum / Deadline</label>
@@ -145,7 +132,7 @@ import Layout from '../layouts/Layout.astro';
           }
         } catch (error) {
           console.error(error);
-          status.textContent = 'Da ist leider etwas schiefgelaufen. Schreiben Sie mir gerne direkt an firstaproductions.media@gmail.com — ich antworte schnell.';
+          status.textContent = 'Da ist leider etwas schiefgelaufen. Schreiben Sie mir gerne direkt an firstupproductions.media@gmail.com — ich antworte schnell.';
           status.classList.remove('hidden');
           status.classList.add('text-red-400');
         } finally {
