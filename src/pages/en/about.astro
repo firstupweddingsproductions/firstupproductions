@@ -1,0 +1,72 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout lang="en" title="About" description="The person behind First Up Productions. Video producer with a cinematic background and a clear focus on professional corporate communication.">
+
+  <section class="section-padding bg-brand-black pt-32">
+    <div class="container-narrow">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Portrait -->
+        <div class="lg:sticky lg:top-[201px]">
+          <div class="aspect-[4/5] bg-brand-gray max-w-sm overflow-hidden">
+            <img src="/portrait.jpg" alt="Adem Kocyigit, founder of First Up Productions, on set with camera and gimbal" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div>
+          <h1 class="text-4xl md:text-5xl font-heading mb-8">The person behind First Up Productions.</h1>
+
+          <div class="space-y-6 text-brand-light/70 leading-relaxed">
+            <p>
+              I am the founder of First Up Productions and the person behind concept, camera, and edit.
+            </p>
+            <p>
+              My way into video production began in film — with directing, storytelling, and visual narrative. That craft is still the foundation of my work today, giving every corporate project a stronger visual language, more deliberate staging, and more depth. I think in stories and communication goals, not in clips.
+            </p>
+            <p>
+              After several years of experience in professional in-house video production — including at a large IT service provider — I founded First Up Productions. The reason: I saw a gap between what companies actually communicate visually and what is genuinely possible. Closing that gap is my drive.
+            </p>
+            <p>
+              Today I work with companies and organisations that want to shape their communication professionally and visibly — with content that doesn't just look good, but creates real business value. Cinematically convincing, strategically effective.
+            </p>
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-sm uppercase tracking-widest text-brand-accent mb-4">What drives me</h3>
+              <ul class="space-y-2 text-sm text-brand-muted">
+                <li>— Corporate communication deserves cinematic quality</li>
+                <li>— Professional content doesn't have to be interchangeable</li>
+                <li>— Think visually, act strategically</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm uppercase tracking-widest text-brand-accent mb-4">What you can expect</h3>
+              <ul class="space-y-2 text-sm text-brand-muted">
+                <li>— Clear communication, short paths</li>
+                <li>— Reliable execution without surprises</li>
+                <li>— A production partner who thinks along strategically</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-12">
+            <h3 class="text-sm uppercase tracking-widest text-brand-accent mb-4">Skills</h3>
+            <div class="flex flex-wrap gap-3">
+              {['Concept & storytelling', 'Direction & visual design', 'Camera & lighting', 'Editing & post-production', 'Color grading', 'Sound design', 'Photography'].map(skill => (
+                <span class="px-4 py-2 text-xs border border-white/10 text-brand-muted">{skill}</span>
+              ))}
+            </div>
+          </div>
+
+          <div class="mt-12">
+            <a href="/en/contact" class="btn-primary">Let's talk about your project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
